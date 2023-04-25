@@ -1,0 +1,217 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body
+{    
+    background-color: #000;
+    display: flex;
+    line-height: 1.4em;
+    /* overflow: hidden; */
+    /* justify-content: center;
+    align-items: center; */
+    /* width: 100vw; */
+    /* height: 100vh; */
+}
+
+.section {
+  height: 2000px;
+  width: 200px;
+  background-color:rgb(10, 10, 10);
+}
+
+.webgl-shell{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.webgl {
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: none;
+    background-color: black;
+    /* animation: intro 3s; */
+}
+
+/* review webflow simulation */
+
+.hide {
+  display: none;
+}
+
+.three-st-mobile {
+  color: aqua;
+}
+
+.three-st-container {
+  color:crimson;
+}
+
+.relay-tests {
+  position: absolute;
+  left:0;
+  top:0;
+  bottom:0;
+}
+
+.relay-switch {
+  display: block;
+  position: fixed;
+  left: 50px;
+  top: 40px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #000;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.relay-switch.relay-fade {
+  opacity: 0
+}
+
+.relay-button-display1 {
+  position: fixed;
+  left: 50px;top: 220px;
+  z-index: 0;
+  display: block;
+  padding: 10px;
+  background-color: #fff;
+  color: #000;
+}
+
+.relay-display1 {
+  position: fixed;
+  left: 50px;
+  top: 100px;
+  display: block;
+  padding: 10px;
+  background-color: #fff;
+}
+  
+.relay-reset {
+  position: fixed;
+  left: 50px;
+  top: 160px;
+  display: block;
+  padding: 10px;
+  background-color: #fff;
+  color: #000;
+}
+
+@keyframes intro { 
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+
+/* three text export */
+
+.three-planet-container {
+  flex-direction: column;
+  align-items: flex-start;
+  grid-row-gap: 15px;
+  position: absolute;
+  color: white;
+  opacity: 0;
+  font-family: Inter, sans-serif;
+}
+
+.three-planet-title {
+font-size: 2.8vh;
+text-transform: uppercase;
+letter-spacing: 0.2em;
+font-weight: 400;
+}
+
+.three-planet-description {
+margin-top: 5px;
+font-size: 1.6vh;
+font-weight: 200;
+margin-bottom: 1vh;
+} 
+
+.three-planet-price {
+font-size: 1.6vh;
+padding: 0.8vh;
+border: 1px solid white;
+text-align: left;
+display: inline-block;
+font-family: JetBrains Mono, monospace;
+}
+
+.three-chainlink-description {
+margin-top: 10px;
+font-size: 1.6vh;
+font-weight: 200;
+margin-bottom: 1vh;
+margin-right: 10vw;
+}
+
+.three-moon-container {
+flex-direction: column;
+align-items: flex-start;
+grid-row-gap: 15px;
+font-family: Inter, sans-serif;
+position: absolute;
+color: white;
+transform: translate(0,-30%);
+opacity: 0;
+}
+
+.three-moon-title {
+font-size: 1.9vh;
+text-transform: uppercase;
+letter-spacing: 0.2em;
+font-weight: 400;
+padding-bottom: 0.8vh;
+}
+
+.three-moon-price {
+font-size: 1.6vh;
+padding: 0.8vh;
+border: 1px solid white;
+text-align: left;
+display: inline-block;
+font-family: JetBrains Mono, monospace;
+}
+
+.three-st-container {
+  flex-direction: column;
+  align-items: flex-start;
+  grid-row-gap: 15px;
+  position: absolute;
+  color: white;
+  opacity: 0;
+  font-family: Inter, sans-serif;
+  top: 0
+}
+
+.three-st-title {
+  font-size: 1.9vh;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+  padding-bottom: 0.8vh;
+}
+
+.three-st-description {
+  font-size: 1.6vh;
+  padding: 0.8vh;
+  border: 1px solid white;
+  text-align: left;
+  display: inline-block;
+  font-family: JetBrains Mono, monospace;
+}
